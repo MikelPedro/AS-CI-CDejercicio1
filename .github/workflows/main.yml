@@ -2,16 +2,18 @@ name: Prueba Python
 
 on: push
 
-jobs:
-  test-python:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Instalar dependencia
-        run: pip install pytest
-      - name: Ejecutar pruebas
-        run: pytest test.py
+jobs: 
+    hola-tarea:
+      runs-on: ubuntu_latest
+      steps:
+        - name: Descargar el codigo
+          uses: actions/checkout@v4
 
+        - name: Instalar pytest
+          run: pip install pytest
+
+        - name: Ejecutar codigo
+          run: pytest test.py 
         
       
       
