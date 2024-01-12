@@ -4,7 +4,7 @@ on: push
 
 jobs: 
     hola-tarea:
-      runs-on: ubuntu_latest
+      runs-on: ubuntu-latest
       steps:
         - name: Descargar el codigo
           uses: actions/checkout@v4
